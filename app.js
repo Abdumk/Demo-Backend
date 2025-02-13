@@ -12,6 +12,16 @@ const app = express();
 // Use the CORS middleware
 app.use(cors());
 
+// create table employee_test (id INT AUTO_INCREMENT PRIMARY KEY, first_name VARCHAR(255), last_name VARCHAR(255), email VARCHAR(255), password VARCHAR(255)); the SQL query to create the table in the database.
+// CREATE TABLE employee_test (
+//   id INT AUTO_INCREMENT PRIMARY KEY,
+//   first_name VARCHAR(255) NOT NULL,
+//   last_name VARCHAR(255) NOT NULL,
+//   email VARCHAR(255) UNIQUE NOT NULL,
+//   password VARCHAR(255) NOT NULL
+// );
+
+
 // Define the connection parameters for the database 
 const dbConfig = {
     connectionLimit: 10,
